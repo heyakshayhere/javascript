@@ -12,7 +12,7 @@ const server  = http.createServer((req, res)=>{
         const data = fs.readFileSync('index.html'); 
         res.end(data.toString());
     }
-    else if(req.url == '/cwh'){
+    else if(req.url == '/me'){
         res.statusCode = 200;
         res.end('<h1> This is me</h1> <p> Hey this is the way to rock the world!</p>');
     }
